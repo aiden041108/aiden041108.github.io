@@ -8,9 +8,9 @@ export default function Home() {
           JY<span>.</span>
         </a>
         <nav aria-label="Primary navigation">
-          <a href="#about">About</a>
-          <a href="#work">Projects</a>
-          <a href="#experience">Experience</a>
+          <a href="#bio">Bio</a>
+          <a href="#education">Education</a>
+          <a href="#projects">Projects</a>
           <a className="nav-cv" href="/junyoung-yang-cv-public.pdf" download>
             CV <Arrow />
           </a>
@@ -30,7 +30,7 @@ export default function Home() {
             their environment, and learn from experience—without wasting compute or memory.
           </p>
           <div className="hero-actions">
-            <a className="button button-primary" href="#about">More about me <span aria-hidden="true">↓</span></a>
+            <a className="button button-primary" href="#bio">Read my bio <span aria-hidden="true">↓</span></a>
             <a className="button button-quiet" href="mailto:aiden1108@kaist.ac.kr">Let’s talk <Arrow /></a>
           </div>
         </div>
@@ -64,11 +64,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="about" id="about">
+      <section className="about" id="bio">
         <div className="section-shell">
           <div className="section-kicker light-line">
-            <span>01 / ABOUT ME</span>
-            <span>RESEARCHER · BUILDER · TEAMMATE</span>
+            <span>01 / BIO</span>
+            <span>CURIOSITY · RESEARCH · CHALLENGE</span>
           </div>
           <div className="about-lead">
             <p className="side-note">A SHORT INTRODUCTION</p>
@@ -77,15 +77,17 @@ export default function Home() {
           <div className="about-detail">
             <div className="about-statement">
               <p>
-                My core interest is <strong>Agentic AI</strong>: systems that perceive context,
-                reason toward a goal, take action, and use the result to improve what they do next.
-                I want these agents to be <strong>general enough to transfer across problems</strong>
-                while remaining <strong>efficient in memory and computation</strong>.
+                My research interest is <strong>Agentic AI</strong>: systems that perceive context,
+                reason toward a goal, act on their environment, and learn from what happens next.
+                I want to design agents that are <strong>general enough to transfer across problems</strong>
+                and <strong>efficient enough to work within real limits on memory and computation</strong>.
               </p>
               <p>
-                GENIUS and KFAC gave me two very different environments to explore the same question.
-                One agent must navigate fragmented knowledge; another must make decisions under noisy,
-                changing signals. In both, intelligence depends on the quality of the loop.
+                I enjoy stepping into <strong>different domains</strong>, learning how each field works,
+                and taking on new kinds of problems. Rather than staying within one application area,
+                I want to understand a domain’s own data, constraints, and decision process—then ask
+                how an agent could reason and act there. Moving from manufacturing knowledge in GENIUS
+                to financial markets in KFAC reflects that curiosity.
               </p>
             </div>
             <div className="principles">
@@ -97,9 +99,57 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="work section-shell" id="work">
+      <section className="experience" id="education">
+        <div className="section-shell">
+          <div className="section-kicker light-line">
+            <span>02 / EDUCATION</span>
+            <span>KAIST · ELECTRICAL ENGINEERING × MATHEMATICS</span>
+          </div>
+          <div className="experience-heading">
+            <h2>Learning across disciplines,<br />researching beyond boundaries.</h2>
+          </div>
+          <div className="experience-list">
+            <div className="experience-row">
+              <span>EDUCATION</span>
+              <strong>KAIST</strong>
+              <p>B.S. candidate · Electrical Engineering &amp; Mathematical Sciences</p>
+              <small>GPA 3.66 / 4.3</small>
+            </div>
+            <div className="experience-row">
+              <span>RESEARCH · 2026</span>
+              <strong>VIC Lab · KAIST EE</strong>
+              <p>Individual Research · Advised by Prof. Munchurl Kim</p>
+              <small>Jan — Mar</small>
+            </div>
+            <div className="experience-row">
+              <span>RESEARCH · 2025</span>
+              <strong>CIS Lab · KAIST EE</strong>
+              <p>Individual Research · Advised by Prof. Heejin Ahn</p>
+              <small>Jan — Mar</small>
+            </div>
+            <div className="experience-row">
+              <span>LEADERSHIP · 2025</span>
+              <strong>KAIST Hurricane</strong>
+              <p>President · University football club</p>
+              <small>2023 — 2025</small>
+            </div>
+            <div className="experience-row">
+              <span>RECOGNITION · 2025</span>
+              <strong>ICISTS GRAFFITI</strong>
+              <p>AI Startup · Top Prize</p>
+              <small>Team project</small>
+            </div>
+          </div>
+          <div className="skills-line">
+            <span>PYTHON</span><span>PYTORCH</span><span>C++</span><span>RAG</span>
+            <span>AGENT SYSTEMS</span><span>QUANT RESEARCH</span>
+          </div>
+        </div>
+      </section>
+
+      <section className="work section-shell" id="projects">
         <div className="section-kicker dark-line">
-          <span>02 / SELECTED PROJECTS</span>
+          <span>03 / PROJECTS</span>
           <span>TWO DOMAINS · ONE WAY OF THINKING</span>
         </div>
         <div className="work-heading">
@@ -200,54 +250,6 @@ export default function Home() {
             </p>
           </div>
         </article>
-      </section>
-
-      <section className="experience" id="experience">
-        <div className="section-shell">
-          <div className="section-kicker light-line">
-            <span>03 / EXPERIENCE</span>
-            <span>KAIST · 2023—2026</span>
-          </div>
-          <div className="experience-heading">
-            <h2>Research, leadership,<br />and the teams behind the work.</h2>
-          </div>
-          <div className="experience-list">
-            <div className="experience-row">
-              <span>EDUCATION</span>
-              <strong>KAIST</strong>
-              <p>B.S. candidate · Electrical Engineering &amp; Mathematical Sciences</p>
-              <small>GPA 3.66 / 4.3</small>
-            </div>
-            <div className="experience-row">
-              <span>RESEARCH · 2026</span>
-              <strong>VIC Lab · KAIST EE</strong>
-              <p>Individual Research · Advised by Prof. Munchurl Kim</p>
-              <small>Jan — Mar</small>
-            </div>
-            <div className="experience-row">
-              <span>RESEARCH · 2025</span>
-              <strong>CIS Lab · KAIST EE</strong>
-              <p>Individual Research · Advised by Prof. Heejin Ahn</p>
-              <small>Jan — Mar</small>
-            </div>
-            <div className="experience-row">
-              <span>LEADERSHIP · 2025</span>
-              <strong>KAIST Hurricane</strong>
-              <p>President · University football club</p>
-              <small>2023 — 2025</small>
-            </div>
-            <div className="experience-row">
-              <span>RECOGNITION · 2025</span>
-              <strong>ICISTS GRAFFITI</strong>
-              <p>AI Startup · Top Prize</p>
-              <small>Team project</small>
-            </div>
-          </div>
-          <div className="skills-line">
-            <span>PYTHON</span><span>PYTORCH</span><span>C++</span><span>RAG</span>
-            <span>AGENT SYSTEMS</span><span>QUANT RESEARCH</span>
-          </div>
-        </div>
       </section>
 
       <section className="contact" id="contact">

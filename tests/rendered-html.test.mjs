@@ -25,6 +25,10 @@ test("server-renders the finished portfolio", async () => {
   assert.match(html, /PC1MDDShieldAlpha/);
   assert.match(html, /Recall@1/);
   assert.match(html, /aiden1108@kaist\.ac\.kr/);
+  const bioIndex = html.indexOf("01 / BIO");
+  const educationIndex = html.indexOf("02 / EDUCATION");
+  const projectsIndex = html.indexOf("03 / PROJECTS");
+  assert.ok(bioIndex >= 0 && bioIndex < educationIndex && educationIndex < projectsIndex);
   assert.doesNotMatch(html, /codex-preview|SkeletonPreview|react-loading-skeleton/i);
 });
 
