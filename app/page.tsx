@@ -19,47 +19,25 @@ export default function Home() {
 
       <section className="hero section-shell" id="top">
         <div className="hero-copy">
-          <p className="eyebrow"><span /> JUNYOUNG YANG · KAIST</p>
+          <p className="eyebrow"><span /> PORTFOLIO · KAIST</p>
           <h1>
-            Building agents that
-            <span>think, act, and improve.</span>
+            Junyoung <span>Yang</span>
           </h1>
-          <p className="hero-intro">
-            I’m an Electrical Engineering and Mathematical Sciences student at KAIST.
-            I want to design general-purpose agents that reason across domains, act on
-            their environment, and learn from experience—without wasting compute or memory.
-          </p>
-          <div className="hero-actions">
-            <a className="button button-primary" href="#bio">Read my bio <span aria-hidden="true">↓</span></a>
-            <a className="button button-quiet" href="mailto:aiden1108@kaist.ac.kr">Let’s talk <Arrow /></a>
+          <div className="hero-profile" aria-label="Junyoung Yang profile">
+            <div className="hero-profile-row">
+              <span>Contact</span>
+              <a href="mailto:aiden1108@kaist.ac.kr">aiden1108@kaist.ac.kr <Arrow /></a>
+            </div>
+            <div className="hero-profile-row">
+              <span>Research Interest</span>
+              <p>General-purpose and efficient agents that reason, act, and improve across domains.</p>
+            </div>
           </div>
         </div>
 
-        <aside className="question-card" aria-label="Junyoung's current research question">
-          <div className="question-topline">
-            <span>THE QUESTION I KEEP RETURNING TO</span>
-            <i />
-          </div>
-          <blockquote>
-            How can we build a <em>general agent</em> that keeps getting better through interaction—and stays efficient as it grows?
-          </blockquote>
-          <div className="question-orbit" aria-hidden="true">
-            <span className="q-node q-one">memory</span>
-            <span className="q-node q-two">signal</span>
-            <span className="q-node q-three">action</span>
-            <span className="q-core">?</span>
-            <i className="q-line q-line-one" />
-            <i className="q-line q-line-two" />
-            <i className="q-line q-line-three" />
-          </div>
-          <div className="question-footer">
-            <span>REASON</span><span>ACT</span><span>REMEMBER</span><span>EVOLVE</span>
-          </div>
-        </aside>
-
         <div className="hero-footnote">
           <span>Based in Daejeon, Korea</span>
-            <span>General · Adaptive · Efficient</span>
+          <span>General · Adaptive · Efficient</span>
           <span>Scroll to explore ↓</span>
         </div>
       </section>
