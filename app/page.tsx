@@ -130,7 +130,7 @@ export default function Home() {
             <div className="experience-row">
               <span>ACTIVITY · 2023—2025</span>
               <strong>KAIST Hurricane</strong>
-              <p>University football club</p>
+              <p>KAIST Football Club</p>
               <small>Member · 2023—2025 / President · 2025</small>
             </div>
             <div className="experience-row">
