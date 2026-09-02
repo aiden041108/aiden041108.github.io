@@ -37,7 +37,7 @@ jobs:
           fi
           echo "PAGES_BASE_PATH=$pages_base" >> "$GITHUB_ENV"
           echo "NEXT_PUBLIC_SITE_URL=https://${GITHUB_REPOSITORY_OWNER}.github.io${pages_base}" >> "$GITHUB_ENV"
-      - run: npm ci
+      - run: npm install --no-audit --no-fund
       - run: npm run export:github
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
