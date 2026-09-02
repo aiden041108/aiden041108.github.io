@@ -9,7 +9,7 @@ export default function Home() {
         </a>
         <nav aria-label="Primary navigation">
           <a href="#bio">Bio</a>
-          <a href="#education">Education</a>
+          <a href="#education">Background</a>
           <a href="#projects">Projects</a>
           <a className="nav-cv" href="/junyoung-yang-cv-public.pdf" download>
             CV <Arrow />
@@ -57,7 +57,7 @@ export default function Home() {
               <p>
                 My research interest is <strong>Agentic AI</strong>: systems that perceive context,
                 reason toward a goal, act on their environment, and learn from what happens next.
-                I want to design agents that are <strong>general enough to transfer across problems</strong>
+                I want to design agents that are <strong>general enough to transfer across problems</strong>{" "}
                 and <strong>efficient enough to work within real limits on memory and computation</strong>.
               </p>
               <p>
@@ -80,42 +80,83 @@ export default function Home() {
       <section className="experience" id="education">
         <div className="section-shell">
           <div className="section-kicker light-line">
-            <span>02 / EDUCATION</span>
-            <span>KAIST · ELECTRICAL ENGINEERING × MATHEMATICS</span>
+            <span>02 / BACKGROUND</span>
+            <span>EDUCATION · RESEARCH · WORK · ACTIVITIES</span>
           </div>
           <div className="experience-heading">
-            <h2>Learning across disciplines,<br />researching beyond boundaries.</h2>
+            <h2>Education &amp; Experience</h2>
           </div>
-          <div className="experience-list">
-            <div className="experience-row">
-              <span>EDUCATION</span>
-              <strong>KAIST</strong>
-              <p>B.S. candidate · Electrical Engineering &amp; Mathematical Sciences</p>
-              <small>GPA 3.66 / 4.3</small>
+          <div className="experience-groups">
+            <div className="experience-group">
+              <div className="experience-group-title"><span>01</span><h3>Education</h3></div>
+              <div className="experience-list">
+                <div className="experience-row">
+                  <span>B.S. CANDIDATE</span>
+                  <strong>KAIST</strong>
+                  <p>Electrical Engineering &amp; Mathematical Sciences</p>
+                  <small>GPA 3.66 / 4.3</small>
+                </div>
+              </div>
             </div>
-            <div className="experience-row">
-              <span>RESEARCH · 2026</span>
-              <strong>VIC Lab · KAIST EE</strong>
-              <p>Individual Research · Advised by Prof. Munchurl Kim</p>
-              <small>Jan — Mar</small>
+
+            <div className="experience-group">
+              <div className="experience-group-title"><span>02</span><h3>Research Experience</h3></div>
+              <div className="experience-list">
+                <div className="experience-row">
+                  <span>JAN — MAR 2026</span>
+                  <strong>VIC Lab · KAIST EE</strong>
+                  <p>Individual Research</p>
+                  <small>Prof. Munchurl Kim</small>
+                </div>
+                <div className="experience-row">
+                  <span>JAN — MAR 2025</span>
+                  <strong>CIS Lab · KAIST EE</strong>
+                  <p>Individual Research</p>
+                  <small>Prof. Heejin Ahn</small>
+                </div>
+              </div>
             </div>
-            <div className="experience-row">
-              <span>RESEARCH · 2025</span>
-              <strong>CIS Lab · KAIST EE</strong>
-              <p>Individual Research · Advised by Prof. Heejin Ahn</p>
-              <small>Jan — Mar</small>
+
+            <div className="experience-group">
+              <div className="experience-group-title"><span>03</span><h3>Work Experience</h3></div>
+              <div className="experience-list">
+                <div className="experience-row">
+                  <span>MAR — AUG 2026</span>
+                  <strong>Hankook Tire &amp; Technology</strong>
+                  <p>KAIST EE Co-op · Project GENIUS</p>
+                  <small>Agent Project</small>
+                </div>
+              </div>
             </div>
-            <div className="experience-row">
-              <span>ACTIVITY · 2023—2025</span>
-              <strong>KAIST Hurricane</strong>
-              <p>KAIST Football Club</p>
-              <small>Member · 2023—2025 / President · 2025</small>
+
+            <div className="experience-group">
+              <div className="experience-group-title"><span>04</span><h3>Leadership &amp; Activities</h3></div>
+              <div className="experience-list">
+                <div className="experience-row">
+                  <span>2023 — 2025</span>
+                  <strong>KAIST Hurricane</strong>
+                  <p>Member · KAIST Football Club</p>
+                  <small>President · 2025</small>
+                </div>
+                <div className="experience-row">
+                  <span>2026</span>
+                  <strong>KAIST KFAC</strong>
+                  <p>Quant Research Team</p>
+                  <small>Member</small>
+                </div>
+              </div>
             </div>
-            <div className="experience-row">
-              <span>RECOGNITION · 2025</span>
-              <strong>ICISTS GRAFFITI</strong>
-              <p>AI Startup · Top Prize</p>
-              <small>Team project</small>
+
+            <div className="experience-group">
+              <div className="experience-group-title"><span>05</span><h3>Awards</h3></div>
+              <div className="experience-list">
+                <div className="experience-row">
+                  <span>2025</span>
+                  <strong>ICISTS GRAFFITI</strong>
+                  <p>AI Startup</p>
+                  <small>Top Prize</small>
+                </div>
+              </div>
             </div>
           </div>
           <div className="skills-line">
