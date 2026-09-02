@@ -24,6 +24,7 @@ test("server-renders the finished portfolio", async () => {
   assert.match(html, /KFAC QUANT RESEARCH/);
   assert.match(html, /PC1MDDShieldAlpha/);
   assert.match(html, /Recall@1/);
+  assert.match(html, /Member · 2023—2025 \/ President · 2025/);
   assert.match(html, /aiden1108@kaist\.ac\.kr/);
   const bioIndex = html.indexOf("01 / BIO");
   const educationIndex = html.indexOf("02 / EDUCATION");

@@ -128,10 +128,10 @@ export default function Home() {
               <small>Jan — Mar</small>
             </div>
             <div className="experience-row">
-              <span>LEADERSHIP · 2025</span>
+              <span>ACTIVITY · 2023—2025</span>
               <strong>KAIST Hurricane</strong>
-              <p>President · University football club</p>
-              <small>2023 — 2025</small>
+              <p>University football club</p>
+              <small>Member · 2023—2025 / President · 2025</small>
             </div>
             <div className="experience-row">
               <span>RECOGNITION · 2025</span>
