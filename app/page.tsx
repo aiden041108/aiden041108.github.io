@@ -12,6 +12,7 @@ export default function Home() {
       </header>
 
       <div className="section-shell">
+        {/* EDIT 1: Name, school, contact, and research interest */}
         <section className="intro" aria-labelledby="name-heading">
           <div className="identity">
             <h1 id="name-heading">Junyoung Yang</h1>
@@ -31,6 +32,7 @@ export default function Home() {
             </dl>
           </div>
 
+          {/* EDIT 2: Biography */}
           <div className="biography" id="bio">
             <h2>Biography</h2>
             <p className="bio-lead">I’m interested in agents that close the loop between thought and action.</p>
@@ -55,6 +57,7 @@ export default function Home() {
           </div>
         </section>
 
+        {/* EDIT 3: Education, research, work, activities, awards, and skills */}
         <section className="academic-section" id="background">
           <h2 className="section-title">Background</h2>
           <div className="section-content resume-groups">
@@ -133,6 +136,7 @@ export default function Home() {
           </div>
         </section>
 
+        {/* EDIT 4: Project GENIUS and KFAC Quant Research */}
         <section className="academic-section" id="projects">
           <h2 className="section-title">Projects</h2>
           <div className="section-content project-list">
