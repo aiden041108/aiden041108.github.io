@@ -18,7 +18,7 @@ test("server-renders the finished portfolio", async () => {
   assert.equal(response.status, 200);
   const html = await response.text();
   assert.match(html, /<title>Junyoung Yang — AI Systems<\/title>/i);
-  assert.match(html, /<h1>Junyoung <span>Yang<\/span><\/h1>/);
+  assert.match(html, /<h1>Junyoung Yang<\/h1>/);
   assert.match(html, /Research Interest/);
   assert.match(html, /General-purpose and efficient agents that reason, act, and improve across domains/);
   assert.match(html, /PROJECT GENIUS/);

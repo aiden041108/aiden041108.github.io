@@ -20,9 +20,7 @@ export default function Home() {
       <section className="hero section-shell" id="top">
         <div className="hero-copy">
           <p className="eyebrow"><span /> PORTFOLIO · KAIST</p>
-          <h1>
-            Junyoung <span>Yang</span>
-          </h1>
+          <h1>Junyoung Yang</h1>
           <div className="hero-profile" aria-label="Junyoung Yang profile">
             <div className="hero-profile-row">
               <span>Contact</span>
