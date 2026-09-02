@@ -1,287 +1,211 @@
-const Arrow = () => <span aria-hidden="true">↗</span>;
-
 export default function Home() {
   return (
     <main>
-      <header className="site-header">
-        <a className="monogram" href="#top" aria-label="Junyoung Yang, home">
-          JY<span>.</span>
-        </a>
+      <header className="site-header section-shell" id="top">
+        <a className="site-name" href="#top">Junyoung Yang</a>
         <nav aria-label="Primary navigation">
-          <a href="#bio">Bio</a>
-          <a href="#education">Background</a>
+          <a href="#bio">Biography</a>
+          <a href="#background">Background</a>
           <a href="#projects">Projects</a>
-          <a className="nav-cv" href="/junyoung-yang-cv-public.pdf" download>
-            CV <Arrow />
-          </a>
+          <a href="/junyoung-yang-cv-public.pdf" download>CV</a>
         </nav>
       </header>
 
-      <section className="hero section-shell" id="top">
-        <div className="hero-copy">
-          <p className="eyebrow"><span /> PORTFOLIO · KAIST</p>
-          <h1>Junyoung Yang</h1>
-          <div className="hero-profile" aria-label="Junyoung Yang profile">
-            <div className="hero-profile-row">
-              <span>Contact</span>
-              <a href="mailto:aiden1108@kaist.ac.kr">aiden1108@kaist.ac.kr <Arrow /></a>
-            </div>
-            <div className="hero-profile-row">
-              <span>Research Interest</span>
-              <p>General-purpose and efficient agents that reason, act, and improve across domains.</p>
-            </div>
-          </div>
-        </div>
+      <div className="section-shell">
+        <section className="intro" aria-labelledby="name-heading">
+          <div className="identity">
+            <h1 id="name-heading">Junyoung Yang</h1>
+            <p className="role">B.S. student</p>
+            <p className="affiliation">Korea Advanced Institute of Science and Technology (KAIST)</p>
+            <p className="location">Daejeon, Korea</p>
 
-        <div className="hero-footnote">
-          <span>Based in Daejeon, Korea</span>
-          <span>General · Adaptive · Efficient</span>
-          <span>Scroll to explore ↓</span>
-        </div>
-      </section>
+            <dl className="profile-details">
+              <div>
+                <dt>Contact</dt>
+                <dd><a href="mailto:aiden1108@kaist.ac.kr">aiden1108@kaist.ac.kr</a></dd>
+              </div>
+              <div>
+                <dt>Research Interest</dt>
+                <dd>General-purpose and efficient agents that reason, act, and improve across domains.</dd>
+              </div>
+            </dl>
+          </div>
 
-      <section className="about" id="bio">
-        <div className="section-shell">
-          <div className="section-kicker light-line">
-            <span>01 / BIO</span>
-            <span>CURIOSITY · RESEARCH · CHALLENGE</span>
+          <div className="biography" id="bio">
+            <h2>Biography</h2>
+            <p className="bio-lead">I’m interested in agents that close the loop between thought and action.</p>
+            <p>
+              My research interest is <strong>Agentic AI</strong>: systems that perceive context,
+              reason toward a goal, act on their environment, and learn from what happens next.
+              I want to design agents that are <strong>general enough to transfer across problems</strong>{" "}
+              and <strong>efficient enough to work within real limits on memory and computation</strong>.
+            </p>
+            <p>
+              I enjoy stepping into <strong>different domains</strong>, learning how each field works,
+              and taking on new kinds of problems. Rather than staying within one application area,
+              I want to understand a domain’s own data, constraints, and decision process—then ask
+              how an agent could reason and act there. Moving from manufacturing knowledge in GENIUS
+              to financial markets in KFAC reflects that curiosity.
+            </p>
+            <p className="text-links">
+              <a href="/junyoung-yang-cv-public.pdf" download>Curriculum Vitae</a>
+              <span>/</span>
+              <a href="mailto:aiden1108@kaist.ac.kr">Email</a>
+            </p>
           </div>
-          <div className="about-lead">
-            <p className="side-note">A SHORT INTRODUCTION</p>
-            <h2>I’m interested in agents that close the loop between thought and action.</h2>
-          </div>
-          <div className="about-detail">
-            <div className="about-statement">
-              <p>
-                My research interest is <strong>Agentic AI</strong>: systems that perceive context,
-                reason toward a goal, act on their environment, and learn from what happens next.
-                I want to design agents that are <strong>general enough to transfer across problems</strong>{" "}
-                and <strong>efficient enough to work within real limits on memory and computation</strong>.
-              </p>
-              <p>
-                I enjoy stepping into <strong>different domains</strong>, learning how each field works,
-                and taking on new kinds of problems. Rather than staying within one application area,
-                I want to understand a domain’s own data, constraints, and decision process—then ask
-                how an agent could reason and act there. Moving from manufacturing knowledge in GENIUS
-                to financial markets in KFAC reflects that curiosity.
-              </p>
-            </div>
-            <div className="principles">
-              <div><span>01</span><strong>General by design</strong><p>Look for mechanisms that transfer beyond one task or domain.</p></div>
-              <div><span>02</span><strong>Efficient by constraint</strong><p>Treat compute, memory, latency, and data as first-class design choices.</p></div>
-              <div><span>03</span><strong>Adaptive by feedback</strong><p>Use outcomes and failures to update the system, not just its answer.</p></div>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="experience" id="education">
-        <div className="section-shell">
-          <div className="section-kicker light-line">
-            <span>02 / BACKGROUND</span>
-            <span>EDUCATION · RESEARCH · WORK · ACTIVITIES</span>
-          </div>
-          <div className="experience-heading">
-            <h2>Education &amp; Experience</h2>
-          </div>
-          <div className="experience-groups">
-            <div className="experience-group">
-              <div className="experience-group-title"><span>01</span><h3>Education</h3></div>
-              <div className="experience-list">
-                <div className="experience-row">
-                  <span>B.S. CANDIDATE</span>
-                  <strong>KAIST</strong>
-                  <p>Electrical Engineering &amp; Mathematical Sciences</p>
-                  <small>GPA 3.66 / 4.3</small>
+        <section className="academic-section" id="background">
+          <h2 className="section-title">Background</h2>
+          <div className="section-content resume-groups">
+            <div className="resume-group">
+              <h3>Education</h3>
+              <div className="resume-item">
+                <div>
+                  <strong>Korea Advanced Institute of Science and Technology (KAIST)</strong>
+                  <p>B.S. Candidate in Electrical Engineering &amp; Mathematical Sciences</p>
                 </div>
               </div>
             </div>
 
-            <div className="experience-group">
-              <div className="experience-group-title"><span>02</span><h3>Research Experience</h3></div>
-              <div className="experience-list">
-                <div className="experience-row">
-                  <span>JAN — MAR 2026</span>
+            <div className="resume-group">
+              <h3>Research Experience</h3>
+              <div className="resume-item">
+                <div>
                   <strong>VIC Lab · KAIST EE</strong>
-                  <p>Individual Research</p>
-                  <small>Prof. Munchurl Kim</small>
+                  <p>Individual Research · Prof. Munchurl Kim</p>
                 </div>
-                <div className="experience-row">
-                  <span>JAN — MAR 2025</span>
+                <time>Jan. 2026 – Mar. 2026</time>
+              </div>
+              <div className="resume-item">
+                <div>
                   <strong>CIS Lab · KAIST EE</strong>
-                  <p>Individual Research</p>
-                  <small>Prof. Heejin Ahn</small>
+                  <p>Individual Research · Prof. Heejin Ahn</p>
                 </div>
+                <time>Jan. 2025 – Mar. 2025</time>
               </div>
             </div>
 
-            <div className="experience-group">
-              <div className="experience-group-title"><span>03</span><h3>Work Experience</h3></div>
-              <div className="experience-list">
-                <div className="experience-row">
-                  <span>MAR — AUG 2026</span>
+            <div className="resume-group">
+              <h3>Work Experience</h3>
+              <div className="resume-item">
+                <div>
                   <strong>Hankook Tire &amp; Technology</strong>
-                  <p>KAIST EE Co-op · Project GENIUS</p>
-                  <small>Agent Project</small>
+                  <p>KAIST EE Co-op · Project GENIUS Agent Project</p>
                 </div>
+                <time>Mar. 2026 – Aug. 2026</time>
               </div>
             </div>
 
-            <div className="experience-group">
-              <div className="experience-group-title"><span>04</span><h3>Leadership &amp; Activities</h3></div>
-              <div className="experience-list">
-                <div className="experience-row">
-                  <span>2023 — 2025</span>
+            <div className="resume-group">
+              <h3>Leadership &amp; Activities</h3>
+              <div className="resume-item">
+                <div>
                   <strong>KAIST Hurricane</strong>
-                  <p>Member · KAIST Football Club</p>
-                  <small>President · 2025</small>
+                  <p>Member · KAIST Football Club · President in 2025</p>
                 </div>
-                <div className="experience-row">
-                  <span>2026</span>
+                <time>2023 – 2025</time>
+              </div>
+              <div className="resume-item">
+                <div>
                   <strong>KAIST KFAC</strong>
                   <p>Quant Research Team</p>
-                  <small>Member</small>
                 </div>
+                <time>2026</time>
               </div>
             </div>
 
-            <div className="experience-group">
-              <div className="experience-group-title"><span>05</span><h3>Awards</h3></div>
-              <div className="experience-list">
-                <div className="experience-row">
-                  <span>2025</span>
-                  <strong>ICISTS GRAFFITI</strong>
-                  <p>AI Startup</p>
-                  <small>Top Prize</small>
+            <div className="resume-group">
+              <h3>Awards</h3>
+              <div className="resume-item">
+                <div>
+                  <strong>ICISTS GRAFFITI AI Startup</strong>
+                  <p>Top Prize</p>
                 </div>
+                <time>2025</time>
               </div>
             </div>
-          </div>
-          <div className="skills-line">
-            <span>PYTHON</span><span>PYTORCH</span><span>C++</span><span>RAG</span>
-            <span>AGENT SYSTEMS</span><span>QUANT RESEARCH</span>
-          </div>
-        </div>
-      </section>
 
-      <section className="work section-shell" id="projects">
-        <div className="section-kicker dark-line">
-          <span>03 / PROJECTS</span>
-          <span>TWO DOMAINS · ONE WAY OF THINKING</span>
-        </div>
-        <div className="work-heading">
-          <h2>Selected contributions.</h2>
-          <p>Projects where I moved from an ambiguous problem to a system that could be built, measured, and improved.</p>
-        </div>
-
-        <article className="project-card genius-card">
-          <div className="project-meta">
-            <span>01</span>
-            <p>PROJECT GENIUS</p>
-            <p>Hankook Tire &amp; Technology</p>
-            <p>Mar — Aug 2026</p>
-          </div>
-          <div className="project-main">
-            <p className="project-label">MULTIMODAL RAG · AGENTIC MEMORY</p>
-            <h3>Turning fragmented factory knowledge into grounded answers.</h3>
-            <p className="project-summary">
-              Manufacturing manuals hold critical knowledge in text, diagrams, layouts, and video.
-              I worked on retrieval and memory designs that preserve those relationships instead of
-              flattening them into isolated text chunks.
-            </p>
-          </div>
-          <div className="genius-visual" aria-label="Multimodal knowledge memory architecture">
-            <div className="visual-top"><span>RAW EVIDENCE</span><span>AGENT MEMORY</span></div>
-            <div className="evidence-stack"><i /><i /><i /><small>TEXT · IMAGE · VIDEO</small></div>
-            <div className="visual-flow"><b>→</b><span>retrieve</span></div>
-            <div className="memory-stack">
-              <span className="memory-agent">AGENT</span>
-              <span>ABSTRACT SCHEMA</span>
-              <div><i>KNOWLEDGE</i><i>EXPERIENCE</i></div>
-              <span>EVIDENCE</span>
+            <div className="resume-group">
+              <h3>Skills &amp; Techniques</h3>
+              <p className="skills">Python · PyTorch · RAG · Agent Systems · Quant Research</p>
             </div>
           </div>
-          <div className="contribution-block">
-            <p className="project-label">MY CONTRIBUTION</p>
-            <ol>
-              <li><span>01</span><p>Extended text-only RAG into a vision + text retrieval pipeline for diagrams, layouts, and maintenance procedures.</p></li>
-              <li><span>02</span><p>Implemented a lightweight HEAVEN-inspired two-stage search using semantic, BM25, and exact-match signals.</p></li>
-              <li><span>03</span><p>Designed a multimodal HyperGraph RAG and Agentic Graph Memory direction for knowledge that evolves through use.</p></li>
-            </ol>
-          </div>
-          <div className="project-results">
-            <p className="project-label">RETRIEVAL BENCHMARK</p>
-            <div><strong>83%</strong><span>Recall@1</span></div>
-            <div><strong>97%</strong><span>Recall@8</span></div>
-            <div><strong>0.0021B</strong><span>FLOPs</span></div>
-            <small>Measured in the project’s HEAVEN-inspired retrieval evaluation.</small>
-          </div>
-        </article>
+        </section>
 
-        <article className="project-card quant-card">
-          <div className="project-meta">
-            <span>02</span>
-            <p>KFAC QUANT RESEARCH</p>
-            <p>KAIST Finance &amp; Analysis Club</p>
-            <p>2026</p>
-          </div>
-          <div className="project-main">
-            <p className="project-label">MARKET STRUCTURE · RL · RISK</p>
-            <h3>Finding robust signals in a market full of convincing noise.</h3>
-            <p className="project-summary">
-              I researched crypto futures through reinforcement learning and principal-component
-              analysis. The goal evolved from predicting direction to understanding when the market’s
-              common risk factor was safe enough to hold.
-            </p>
-          </div>
-          <div className="quant-visual" aria-label="PC1 market regime research dashboard">
-            <div className="quant-topline"><span>PC1 COMMON FACTOR</span><span className="risk-on"><i /> RISK ON</span></div>
-            <div className="quant-chart" aria-hidden="true">
-              <span className="chart-grid grid-one" /><span className="chart-grid grid-two" /><span className="chart-grid grid-three" />
-              <i className="chart-segment seg-one" /><i className="chart-segment seg-two" /><i className="chart-segment seg-three" />
-              <i className="chart-segment seg-four" /><i className="chart-segment seg-five" /><i className="chart-segment seg-six" />
-              <b className="risk-window window-one" /><b className="risk-window window-two" />
-            </div>
-            <div className="quant-stats"><span>15 ASSETS</span><span>6H REBALANCE</span><span>FEE-AWARE</span></div>
-          </div>
-          <div className="contribution-block quant-contribution">
-            <p className="project-label">MY CONTRIBUTION</p>
-            <ol>
-              <li><span>01</span><p>Built a crypto-futures PPO research pipeline with chronological splits, transaction costs, regime penalties, and out-of-sample evaluation.</p></li>
-              <li><span>02</span><p>Developed PC1 studies across a 15-asset universe, testing regime persistence, residual signals, walk-forward stability, and placebo baselines.</p></li>
-              <li><span>03</span><p>Designed PC1MDDShieldAlpha, then fixed a stale-position artifact and reduced turnover with hysteresis and a fee-aware no-trade band.</p></li>
-            </ol>
-          </div>
-          <div className="project-results quant-results">
-            <p className="project-label">FEE-AWARE BACKTEST</p>
-            <div><strong>49.0%</strong><span>Total return</span></div>
-            <div><strong>0.829</strong><span>Sharpe</span></div>
-            <div><strong>-12.0%</strong><span>Max drawdown</span></div>
-            <small>Research backtest with 0.05% one-way fees; slippage excluded. Not live performance.</small>
-          </div>
-          <div className="failure-note">
-            <span>WHAT CHANGED MY MIND</span>
-            <p>
-              Early residual and PPO approaches did not generalize. Rather than hide the negative result,
-              I used it to reframe PC1 as a <strong>risk-regime indicator</strong>, not a directional alpha.
-            </p>
-          </div>
-        </article>
-      </section>
+        <section className="academic-section" id="projects">
+          <h2 className="section-title">Projects</h2>
+          <div className="section-content project-list">
+            <article className="project-entry">
+              <div className="project-heading">
+                <div>
+                  <span className="project-number">01</span>
+                  <h3>Project GENIUS</h3>
+                </div>
+                <time>Mar. 2026 – Aug. 2026</time>
+              </div>
+              <p className="project-context">Hankook Tire &amp; Technology · Multimodal RAG · Agentic Memory</p>
+              <h4>Turning fragmented factory knowledge into grounded answers.</h4>
+              <p>
+                Manufacturing manuals hold critical knowledge in text, diagrams, layouts, and video.
+                I worked on retrieval and memory designs that preserve those relationships instead of
+                flattening them into isolated text chunks.
+              </p>
+              <h5>My contribution</h5>
+              <ol>
+                <li>Extended text-only RAG into a vision + text retrieval pipeline for diagrams, layouts, and maintenance procedures.</li>
+                <li>Implemented a lightweight HEAVEN-inspired two-stage search using semantic, BM25, and exact-match signals.</li>
+                <li>Designed a multimodal HyperGraph RAG and Agentic Graph Memory direction for knowledge that evolves through use.</li>
+              </ol>
+              <div className="metrics" aria-label="Project GENIUS retrieval benchmark">
+                <p><strong>83%</strong><span>Recall@1</span></p>
+                <p><strong>97%</strong><span>Recall@8</span></p>
+                <p><strong>0.0021B</strong><span>FLOPs</span></p>
+              </div>
+              <p className="note">Measured in the project’s HEAVEN-inspired retrieval evaluation.</p>
+            </article>
 
-      <section className="contact" id="contact">
-        <div className="section-shell contact-inner">
-          <p className="eyebrow light"><span /> START A CONVERSATION</p>
-          <h2>Curious minds<br />build better systems.</h2>
-          <a className="contact-link" href="mailto:aiden1108@kaist.ac.kr">
-            aiden1108@kaist.ac.kr <Arrow />
-          </a>
-          <div className="contact-footer">
-            <span>© 2026 Junyoung Yang</span>
-            <a href="#top">Back to top ↑</a>
+            <article className="project-entry">
+              <div className="project-heading">
+                <div>
+                  <span className="project-number">02</span>
+                  <h3>KFAC Quant Research</h3>
+                </div>
+                <time>2026</time>
+              </div>
+              <p className="project-context">KAIST Finance &amp; Analysis Club · Market Structure · RL · Risk</p>
+              <h4>Finding robust signals in a market full of convincing noise.</h4>
+              <p>
+                I researched crypto futures through reinforcement learning and principal-component
+                analysis. The goal evolved from predicting direction to understanding when the market’s
+                common risk factor was safe enough to hold.
+              </p>
+              <h5>My contribution</h5>
+              <ol>
+                <li>Built a crypto-futures PPO research pipeline with chronological splits, transaction costs, regime penalties, and out-of-sample evaluation.</li>
+                <li>Developed PC1 studies across a 15-asset universe, testing regime persistence, residual signals, walk-forward stability, and placebo baselines.</li>
+                <li>Designed PC1MDDShieldAlpha, then fixed a stale-position artifact and reduced turnover with hysteresis and a fee-aware no-trade band.</li>
+              </ol>
+              <div className="metrics" aria-label="KFAC fee-aware backtest">
+                <p><strong>49.0%</strong><span>Total return</span></p>
+                <p><strong>0.829</strong><span>Sharpe</span></p>
+                <p><strong>-12.0%</strong><span>Max drawdown</span></p>
+              </div>
+              <p className="note">Research backtest with 0.05% one-way fees; slippage excluded. Not live performance.</p>
+              <p className="learning">
+                <strong>What changed my mind.</strong> Early residual and PPO approaches did not generalize.
+                Rather than hide the negative result, I used it to reframe PC1 as a risk-regime indicator,
+                not a directional alpha.
+              </p>
+            </article>
           </div>
-        </div>
-      </section>
+        </section>
+
+        <footer className="site-footer">
+          <p>© 2026 Junyoung Yang</p>
+          <p><a href="mailto:aiden1108@kaist.ac.kr">aiden1108@kaist.ac.kr</a> · <a href="#top">Back to top</a></p>
+        </footer>
+      </div>
     </main>
   );
 }
